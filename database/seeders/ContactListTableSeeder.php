@@ -14,12 +14,12 @@ class ContactListTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('contact_list')->delete();
-        
+
         \DB::table('contact_list')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => '1',
                 'nama' => 'Location',
@@ -31,32 +31,8 @@ class ContactListTableSeeder extends Seeder
                 'created_at' => '2022-08-21 08:34:56',
                 'updated_at' => '2023-06-18 19:06:11',
             ),
-            1 => 
-            array (
-                'id' => '2',
-                'nama' => 'Telepon',
-                'icon' => 'fas fa-phone',
-                'url' => 'tel:+6285798132505',
-                'order' => '2',
-                'keterangan' => '+6285798132505',
-                'status' => '1',
-                'created_at' => '2022-08-21 08:35:23',
-                'updated_at' => '2022-08-21 08:35:23',
-            ),
-            2 => 
-            array (
-                'id' => '3',
-                'nama' => 'Email',
-                'icon' => 'fas fa-envelope',
-                'url' => 'mailto:help@karmapack.id',
-                'order' => '3',
-                'keterangan' => 'help@karmapack.id',
-                'status' => '1',
-                'created_at' => '2022-08-21 08:35:47',
-                'updated_at' => '2023-03-16 17:52:14',
-            ),
         ));
-        
-        
+
+
     }
 }

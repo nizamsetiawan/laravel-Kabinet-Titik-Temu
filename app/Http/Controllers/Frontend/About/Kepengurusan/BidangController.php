@@ -13,7 +13,7 @@ class BidangController extends Controller
             'title' => $jabatan->nama,
             // 'navigation' => ['tentang.kepengurusan.bidang', $jabatan->slug],
             'navigation' => 'tentang.kepengurusan.struktur',
-            'description' => "Struktur Kepengurusan Bidang $jabatan->nama | Keluarga Mahasiswa Dan Pelajar Cianjur Kidul Periode $jabatan->dari - $jabatan->sampai $jabatan->nama",
+            'description' => "Struktur Kepengurusan Bidang $jabatan->nama | Badan Eksekutif Mahasiswa UNESA Periode $jabatan->dari - $jabatan->sampai $jabatan->nama",
             'image' => $jabatan->fotoUrl(),
         ];
 
