@@ -1,6 +1,10 @@
 @php
     $angkatan = 0;
-    $is_filter = request()->query('search') || request()->query('category') || request()->query('sort') || request()->query('limit');
+    $is_filter =
+        request()->query('search') ||
+        request()->query('category') ||
+        request()->query('sort') ||
+        request()->query('limit');
 @endphp
 @extends('layouts.frontend.master')
 @section('content')
@@ -33,7 +37,7 @@
                             <h1 class="page-header__title">Semua Anggota</h1>
                         </div>
                         <div data-anim="slide-up delay-2">
-                            <p class="page-header__text">Daftar Semua anggota karmapack</p>
+                            <p class="page-header__text">Daftar Semua anggota BEM UNESA 2024</p>
                         </div>
                     </div>
                 </div>
@@ -161,10 +165,34 @@
                                 <p class="card-text my-1">
                                     <small class="text-muted">
                                         @php
-                                            $province = $item->province ? ', <a class="text-purple-1" href="' . url('anggota?category=alamat&search=' . $item->province) . '">' . $item->province . '</a>' : '';
-                                            $regencie = $item->regencie ? ', <a class="text-purple-1" href="' . url('anggota?category=alamat&search=' . $item->regencie) . '">' . $item->regencie . '</a>' : '';
-                                            $district = $item->district ? ', <a class="text-purple-1" href="' . url('anggota?category=alamat&search=' . $item->district) . '">' . $item->district . '</a>' : '';
-                                            $village = $item->village ? ', <a class="text-purple-1" href="' . url('anggota?category=alamat&search=' . $item->village) . '">' . $item->village . '</a>' : '';
+                                            $province = $item->province
+                                                ? ', <a class="text-purple-1" href="' .
+                                                    url('anggota?category=alamat&search=' . $item->province) .
+                                                    '">' .
+                                                    $item->province .
+                                                    '</a>'
+                                                : '';
+                                            $regencie = $item->regencie
+                                                ? ', <a class="text-purple-1" href="' .
+                                                    url('anggota?category=alamat&search=' . $item->regencie) .
+                                                    '">' .
+                                                    $item->regencie .
+                                                    '</a>'
+                                                : '';
+                                            $district = $item->district
+                                                ? ', <a class="text-purple-1" href="' .
+                                                    url('anggota?category=alamat&search=' . $item->district) .
+                                                    '">' .
+                                                    $item->district .
+                                                    '</a>'
+                                                : '';
+                                            $village = $item->village
+                                                ? ', <a class="text-purple-1" href="' .
+                                                    url('anggota?category=alamat&search=' . $item->village) .
+                                                    '">' .
+                                                    $item->village .
+                                                    '</a>'
+                                                : '';
                                         @endphp
                                     </small>
                                     <small class="text-muted">{!! $item->alamat_lengkap . $province . $regencie . $district . $village !!}</small>
@@ -230,7 +258,9 @@
 @endsection
 @section('javascript')
     {{-- mansory --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         let meta_list_is_edit = true;
         const meta_list = new Map();

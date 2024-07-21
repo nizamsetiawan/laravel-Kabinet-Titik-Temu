@@ -301,7 +301,7 @@
                         <li>Sejarah</li>
                         <li>Struktur Kepengurusan (Detail Kepengurusan Saat Ini). [selesai] <a
                                 href="{{ route('tentang.kepengurusan.struktur') }}">Kunjungi</a></li>
-                        <li>Periode Kepengurusan (List Semua Periode Kepengurusan Karmapack)</li>
+                        <li>Periode Kepengurusan (List Semua Periode Kepengurusan BEM UNESA 2024)</li>
                         <li>Anggaran Dasar Anggaran Rumah Tangga</li>
                     </ul>
 
@@ -313,7 +313,7 @@
 
                     <h6 class="mb-0 mt-4">Anggota</h6>
                     <ul class="list-style5">
-                        <li>List Semua Anggota Karmapack. [selesai] <a href="{{ route('anggota') }}">Kunjungi</a>
+                        <li>List Semua Anggota BEM UNESA 2024. [selesai] <a href="{{ route('anggota') }}">Kunjungi</a>
                         </li>
                     </ul>
 
@@ -334,7 +334,7 @@
 
                     <h6 class="mb-0 mt-4">kontak</h6>
                     <ul class="list-style5">
-                        <li>Halaman Untuk menghubungi admin karmapack lewat website</li>
+                        <li>Halaman Untuk menghubungi admin BEM UNESA 2024 lewat website</li>
                     </ul>
                 </div>
             </div>
