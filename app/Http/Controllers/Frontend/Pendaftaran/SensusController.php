@@ -52,7 +52,7 @@ class SensusController extends Controller
                     $model->status = 3;
                     $model->keterangan = 'Email sudah digunakan';
                 } else {
-                    $password = '12345678';
+                    $password = $request->whatsapp;
                     $username = strtolower(preg_replace('/[^A-Za-z0-9-]+/', '-', $request->nama)) . date('YmdHis');
                     $user = new User();
                     $user->name = $request->nama;
