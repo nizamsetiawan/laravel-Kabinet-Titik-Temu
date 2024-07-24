@@ -1,2 +1,0 @@
-[x] login autocomplete
-[x] Perbaikan copyright

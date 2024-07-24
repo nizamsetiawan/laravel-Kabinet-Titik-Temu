@@ -1,2 +1,0 @@
-[x] fix dashboard admin
-[x] fix error tambah bidang
